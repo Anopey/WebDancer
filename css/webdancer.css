@@ -1,0 +1,31 @@
+body{
+	height: 100%;
+	margin: 0;
+}
+
+html{
+	height:100%;
+}
+
+#header{
+	background-color: #bfb600;
+	margin: 0;
+	height: 100vh;
+}
+
+#main{
+	background-color: black;
+	margin: 0;
+	height: 100vh;
+}
+
+#white-clef{
+	float:left;
+	height: 100%;
+	filter: drop-shadow(6px 5px 8px rgba(0,0,0,0.60)) drop-shadow(-7px 5px 6px rgba(0,0,0,0.22)) drop-shadow(2px -5px 4px rgba(0,0,0,0.42));
+}
+
+#header-content{
+	float:left;
+	height: 100%;
+}
