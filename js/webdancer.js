@@ -1,7 +1,8 @@
 
 var clefImage = $("#white-clef");
 var headerContentDiv = $("#header-content");
-var headerContentTextDiv = $("#header-content div");
+var headerContentTextDivFirst = $("#header-content div:first-of-type");
+var headerContentTextDivSecond = $("#header-content div:nth-of-type(2)");
 var dArrow = document.querySelector('#down-arrow');
 var brandText = $("span");
 var win = $(window);
@@ -11,7 +12,8 @@ var resizeBuffered = true;
 ArrangeSize();
 function ArrangeSize(){
 	if(atHeader){
-		headerContentTextDiv.css('line-height', headerContentDiv.height() + "px");
+		headerContentTextDivFirst.css('line-height', headerContentDiv.height() * 0.9 + "px");
+		headerContentTextDivSecond.css('line-height', headerContentDiv.height() * 0.1 + "px");
 		if(win.width() < 1540 && win.width() > 1360){
 			if(resizeBuffered){
 				clefImage.css('display', 'block');

@@ -34,16 +34,27 @@ html{
 #header-content div:first-of-type{
 	text-align: center;
 	height: 90%;
-	line-height: 10%;
 	margin: 0;
 	padding: 0;
 }
 
 #header-content div:nth-of-type(2){
-	text-align: center;
+	text-align: right;
+	padding-right: 40px;
 	height: 10%;
 	margin: 0;
-	padding: 0;
+}
+
+a{
+	margin-left: 75px;
+}
+
+a img{
+	width:64px;
+}
+
+a:hover img{
+	width:70px;
 }
 
 span{
