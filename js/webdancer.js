@@ -8,9 +8,9 @@ const atHeader = true;
 
 let resizeBuffered = true;
 
-ArrangeSize();
+arrangeSize();
 
-function ArrangeSize() {
+function arrangeSize() {
     if (atHeader) {
         headerContentTextDivFirst.css('line-height', headerContentDiv.height() * 0.9 + "px");
         headerContentTextDivSecond.css('line-height', headerContentDiv.height() * 0.1 + "px");
@@ -43,3 +43,11 @@ function ArrangeSize() {
 }
 
 window.addEventListener("resize", ArrangeSize, true);
+
+function smoothScroll (target) {
+	$('html, body').stop().animate({
+		'scrollTop': $(target).offset().top
+	}, 900, 'swing', function () {
+		window.location.hash = target;
+	});
+}

@@ -1,3 +1,8 @@
+:root {
+	--primary-color: #c7c406;
+	--secondary-color: #6006c7;
+}
+
 body {
     height: 100%;
     margin: 0;
@@ -8,16 +13,76 @@ html {
 }
 
 #header {
-    background-color: #c7c406;
+    background-color: var(--primary-color);
     margin: 0;
     height: 100%;
     width: 100%;
 }
 
 #main {
-    background-color: black;
+    background-color: var(--secondary-color);
     margin: 0;
     height: 100%;
+	position: relative;
+}
+
+#centered {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	width: 75%;
+	height: 60%;
+}
+
+#visualization {
+	border: 1px solid grey;
+	position: relative;;
+	width: 100%;
+	top: 10%;
+	height: 65%;
+	border-radius: 10px;
+}
+
+audio {
+	position: fixed;
+	top: calc(75% - 20px);
+	left: 10px;
+	width: calc(100% - 30px);
+}
+
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+.upload-btn-wrapper {
+	position: relative;
+	overflow: hidden;
+	display: inline-block;
+}
+
+#upload-btn {
+	border: none;
+	color: black;
+	background-color: var(--primary-color);
+	padding: 8px 20px;
+	border-radius: 8px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.upload-btn-wrapper input[type=file] {
+	font-size: 100px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	opacity: 0;
 }
 
 #white-clef {
