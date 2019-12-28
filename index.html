@@ -30,11 +30,12 @@
 <div id="main">
 	<div id="centered">
 		<div class="upload-btn-wrapper">
-			<button id="upload-btn">Upload a file</button>
+			<button class="btn-standard" id="upload-btn">Upload a file</button>
 			<input id="upload-file" type="file" name="myfile"/>
-			<audio id="audio" controls></audio>
 		</div>
 		<canvas id="visualization"></canvas>
+		<button class="btn-standard" id="fullsize-btn" onclick="makeCanvasFullSize()">Go Fullsize</button>
+		<audio id="audio" controls></audio>
 	</div>
 </div>
 <script type="text/javascript" src="js/lib/jquery-3.4.1.min.js"></script>

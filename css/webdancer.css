@@ -38,11 +38,18 @@ html {
 
 #visualization {
 	border: 1px solid grey;
-	position: relative;;
+	position: relative;
 	width: 100%;
 	top: 10%;
 	height: 65%;
 	border-radius: 10px;
+}
+
+#fullsize-btn {
+	position: fixed;
+	bottom: calc(75% - 20px);
+	right: 10px;
+	z-index: 9;
 }
 
 audio {
@@ -66,9 +73,10 @@ audio {
 	position: relative;
 	overflow: hidden;
 	display: inline-block;
+	z-index: 9;
 }
 
-#upload-btn {
+.btn-standard {
 	border: none;
 	color: black;
 	background-color: var(--primary-color);

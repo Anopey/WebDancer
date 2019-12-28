@@ -42,6 +42,26 @@ function arrangeSize() {
     }
 }
 
+function makeCanvasFullSize() {
+	$("#main").css('background-color', 'black');
+
+	const wrapper = $("#centered");
+	wrapper.width("100%");
+	wrapper.height("100%");
+
+	const canvas = $("#visualization");
+	canvas.width("100%");
+	canvas.height("100%");
+	canvas.css("top","-4%");
+	canvas.css("left","0");
+	canvas.css("border","none");
+	canvas.css("border-radius","0");
+
+	$("#fullsize-btn").hide();
+
+	$("#audio").css("top","90%");
+}
+
 window.addEventListener("resize", arrangeSize, true);
 
 function smoothScroll (target) {
