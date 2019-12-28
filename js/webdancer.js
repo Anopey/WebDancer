@@ -42,7 +42,7 @@ function arrangeSize() {
     }
 }
 
-window.addEventListener("resize", ArrangeSize, true);
+window.addEventListener("resize", arrangeSize, true);
 
 function smoothScroll (target) {
 	$('html, body').stop().animate({
